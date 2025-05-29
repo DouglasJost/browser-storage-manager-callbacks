@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.container {
+  background: white;
+  padding: 1.5rem;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label#keyListLabel {
+  margin-bottom: -0.75rem;
+}
+
+ul#keyList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+ul#keyList li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+#keyList li.selected {
+  background-color: #d5ccff; /* light purple highlight */
+  /* font-weight: bold; */
+}
+
+ul#keyList li:hover {
+  background-color: #f0f0f0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  flex: 1 1 45%;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-message {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 0.95rem;
+  transition: opacity 0.3s ease;  
+  text-align: center;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  display: block;
+}
+
+.status-message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-message.error {
+  background-color: #e53935;
+  color: white;
+}

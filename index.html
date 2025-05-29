@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Storage Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Storage Manager</h1>
+
+      <label for="storageType">Choose Storage:</label>
+      <select id="storageType">
+        <option value="sessionStorage" selected>Session Storage</option>
+        <option value="localStorage">Local Storage</option>
+        <option value="indexedDB">IndexedDB</option>
+      </select>
+
+      <label id="keyListLabel" for="keyList"><span id="storageName">Session</span>&nbsp;Keys</label>
+      <ul id="keyList"></ul>
+
+      <label for="keyInput">Key:</label>
+      <input type="text" id="keyInput" />
+
+      <label for="valueInput">Value:</label>
+      <textarea id="valueInput"></textarea>
+
+      <div class="button-group">
+        <button id="getBtn">Get</button>
+        <button id="setBtn">Set</button>
+        <button id="removeBtn">Remove</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+
+      <div id="statusMessage" class="status-message" style="display: none;"> </div>
+    </div>
+      
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
+
+    <script src="storageWrapper.js"></script>
+    <script src="appStorageManager.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

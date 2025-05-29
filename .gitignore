@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+
+# Test coverage output
+coverage/
+
+# Build output
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Jest cache
+.jest/
+
+# npm cache
+.npm/
+
+# macOS Finder metadata
+.AppleDouble
+.LSOverride
+
+# Optional lock files (use one consistently)
+package-lock.json
+yarn.lock
