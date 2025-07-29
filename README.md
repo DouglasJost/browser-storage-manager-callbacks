@@ -8,7 +8,7 @@
 
 ## 📘 Overview
 
-**Browser Storage Manager (Callback Version)** provides a unified JavaScript interface for managing browser storage — `localStorage`, `sessionStorage`, and `IndexedDB` — using plain JavaScript and **callback-based control flow**, with **no Promises or async/await**.
+**Browser Storage Manager (Callback Version)** provides a unified JavaScript interface for managing browser storage — `localStorage`, `sessionStorage`, and `IndexedDB` — using plain JavaScript and **callback-based control flow**, with **no Promises or async/await**.  jQuery was used to implement the UI, manage DOM events and improve the overall user experience.
 
 This application demonstrates how to abstract storage logic into reusable wrappers, simplifying client-side code by hiding the complexity of different browser APIs. It includes a user-friendly UI (`app.js`) for testing and verifying the logic interactively.
 
@@ -16,7 +16,8 @@ This application demonstrates how to abstract storage logic into reusable wrappe
 
 ## 🎯 Design Goals
 
-- ✅ Plain JavaScript and jQuery (no build tools or frameworks)
+- ✅ Plain JavaScript (no build tools or frameworks)
+- ✅ Leveraged jQuery to implement custom UI components, manage DOM events, and improve the overall user experience
 - ✅ **No Promises** and **no async/await**
 - ✅ Stable and simple callback-based flow
 - ✅ Common interface for all three browser storage types
