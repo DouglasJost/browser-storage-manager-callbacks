@@ -16,7 +16,7 @@ This application demonstrates how to abstract storage logic into reusable wrappe
 
 ## 🎯 Design Goals
 
-- ✅ Plain JavaScript (no build tools or frameworks)
+- ✅ Plain JavaScript and jQuery (no build tools or frameworks)
 - ✅ **No Promises** and **no async/await**
 - ✅ Stable and simple callback-based flow
 - ✅ Common interface for all three browser storage types
